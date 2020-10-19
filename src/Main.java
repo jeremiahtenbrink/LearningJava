@@ -4,23 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int studentAge = 15;
-        double someNumber = 3.45;
+        Triangle triangleA = new Triangle(15, 8, 15, 8, 17);
+        Triangle triangleB = new Triangle(3, 5, 3, 2, 4);
 
-        boolean hasPrefectAttendance = true;
-        String firstName = "Jeremiah";
-        String lastName = "Tenbrink";
+        double trinagleAArea = triangleA.findArea();
+        System.out.println(trinagleAArea);
 
-        char firstInital = firstName.charAt(0);
-        char lastInital = lastName.charAt(0);
-
-        System.out.println(firstName + " " + lastName + " has a GPA of " + someNumber);
-        System.out.println("What do you want to update it to?");
-
-        Scanner input = new Scanner(System.in);
-        someNumber = input.nextDouble();
-
-        System.out.println(firstName + " " + lastName + " now has a GPA of " + someNumber);
     }
 
 }
