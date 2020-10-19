@@ -1,9 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
         int studentAge = 15;
-        double someNumber = 23.4;
+        double someNumber = 3.45;
 
         boolean hasPrefectAttendance = true;
         String firstName = "Jeremiah";
@@ -12,14 +14,13 @@ public class Main {
         char firstInital = firstName.charAt(0);
         char lastInital = lastName.charAt(0);
 
+        System.out.println(firstName + " " + lastName + " has a GPA of " + someNumber);
+        System.out.println("What do you want to update it to?");
 
-        System.out.println(studentAge);
-        System.out.println(someNumber);
-        System.out.println(firstInital);
-        System.out.println(lastInital);
-        System.out.println(hasPrefectAttendance);
-        System.out.println(firstName);
-        System.out.println(lastName);
+        Scanner input = new Scanner(System.in);
+        someNumber = input.nextDouble();
+
+        System.out.println(firstName + " " + lastName + " now has a GPA of " + someNumber);
     }
 
 }
